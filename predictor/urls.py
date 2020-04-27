@@ -15,8 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf.urls import url, include
+
+from apps.knn.urls import urlpatterns as knn_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
 ]
+
+urlpatterns += knn_urlpatterns
