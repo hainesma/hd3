@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
     'rest_framework',
-    'apps.knn',
+    'apps.endpoints',
     'apps.ml',
 ]
 

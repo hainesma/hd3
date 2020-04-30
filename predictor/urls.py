@@ -17,11 +17,11 @@ from django.contrib import admin
 from django.urls import include, path
 from django.conf.urls import url, include
 
-from apps.knn.urls import urlpatterns as knn_urlpatterns
+from apps.endpoints.urls import urlpatterns as endpoints_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
 ]
 
-urlpatterns += knn_urlpatterns
+urlpatterns += endpoints_urlpatterns
