@@ -1,6 +1,7 @@
 import joblib
 import pandas as pd
 
+# Figure out why train_mode.joblib doesn't show up
 class RandomForestClassifier:
     def __init__(self):
         path_to_artifacts = "../../research/"
